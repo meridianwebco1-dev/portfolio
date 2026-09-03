@@ -1,0 +1,36 @@
+
+
+"Fix all layout and overlap issues across the Meridian Web Co. portfolio site. Currently, text, buttons, and elements are overlapping each other and not properly spaced. Do a full layout audit and fix the following:
+
+1. Spacing & Positioning
+
+Review every section and ensure no text, buttons, icons, or images overlap one another
+Add proper padding and margin between all elements — no element should touch or clip into another
+Ensure consistent vertical spacing (padding) between sections (e.g., py-16 to py-24 range) so sections don't feel cramped or run into each other
+
+2. Z-Index & Stacking Issues
+
+Audit all elements using position: absolute or position: fixed (e.g., background gradients, decorative shapes, sticky headers, custom cursors) — ensure proper z-index layering so nothing sits on top of text/buttons unintentionally
+Make sure background decorative elements (gradients, blobs, particles) stay behind content, not overlapping it
+
+3. Responsive Layout Fixes
+
+Test and fix layout at all breakpoints (mobile 375px, tablet 768px, desktop 1440px+) — flex/grid items should wrap or stack properly instead of overlapping when the viewport shrinks
+Fix any absolute-positioned text/buttons that don't reposition correctly on smaller screens — convert to responsive relative positioning where needed
+
+4. Typography Overlap
+
+Ensure headings, subheadings, and body text have enough line-height and margin so multi-line text doesn't overlap the element below it
+Check hero section specifically — animated/staggered text reveals often cause temporary overlap; ensure each line has its own container with proper height reserved
+
+5. Button & CTA Placement
+
+Ensure all buttons have enough surrounding space (no buttons overlapping text or other buttons)
+Fix any buttons that are absolutely positioned over hero/background sections — reposition using flex/grid layout instead of absolute positioning where possible
+
+6. Card/Grid Layout Fixes
+
+Fix any service cards, portfolio cards, or testimonial cards where content overflows or overlaps the card boundary
+Ensure equal card heights within a row (using items-stretch or grid with auto-rows-fr) so content doesn't spill over
+
+Deliverable: A visually clean site with zero overlapping elements, proper spacing throughout, and correct responsive behavior at all screen sizes. Test and confirm each section individually after fixing.

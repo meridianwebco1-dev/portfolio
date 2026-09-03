@@ -1,0 +1,48 @@
+Build an extremely high-end, premium portfolio website for a tech agency called 'Meridian Web Co.' using Next.js, TypeScript, Tailwind CSS, and Framer Motion. This should look like it belongs to a top 1% design/dev agency (think Linear, Vercel, Stripe, or Framer's own marketing site) — not a template.
+
+Design philosophy:
+
+Obsess over whitespace, spacing rhythm, and visual hierarchy — nothing should feel cramped or default
+Micro-interactions everywhere: buttons with subtle hover states/scale transforms, cursor-following elements, smooth scroll-triggered reveals, magnetic hover effects on cards
+Custom cursor (optional dot/ring cursor that reacts to hoverable elements)
+Glassmorphism or subtle noise/grain texture overlays for depth — avoid flat, lifeless backgrounds
+Large, confident typography — oversized hero headline (clamp() responsive sizing), tight letter-spacing on headings, generous line-height on body text
+Asymmetric, editorial-style layouts instead of centered generic grids — break the grid intentionally in 1-2 sections for visual interest
+
+Brand identity:
+
+Primary: navy (
+#0B1F3A), Accent: electric blue (
+#1E6FFF), plus a near-black background option (
+#05070D) for dark-mode sections
+Logo: circular meridian-line mark with upward peak/flame
+Tagline: 'Crafting digital solutions that drive results.'
+
+Key sections with high-end treatment:
+
+Hero — Full-viewport, animated gradient mesh or subtle particle/grid background, headline with staggered word-by-word fade/slide-in animation, animated CTA button with hover glow effect
+Services — Bento-grid layout (mixed card sizes, not uniform grid) with hover-reveal details, subtle 3D tilt-on-hover effect on cards using Framer Motion
+Portfolio — Full-bleed project showcase with horizontal scroll or masonry layout, image hover reveals project details with smooth overlay transition, case study cards with parallax image movement on scroll
+Tech Stack — Infinite auto-scrolling logo marquee (pause on hover)
+Process/How We Work — Vertical timeline with scroll-progress indicator, animated connecting lines that draw in as user scrolls
+Testimonials — Auto-playing carousel with smooth drag/swipe, large quote typography, subtle background blur behind active card
+Contact/CTA — Full-width closing section with animated gradient background, form with floating labels and smooth focus states, submit button with loading/success micro-animation
+
+Technical polish:
+
+Scroll-linked animations using Framer Motion's useScroll and useTransform
+Page transitions between routes (fade or slide)
+Optimized images (next/image, blur placeholders)
+Custom scrollbar styling
+Dark mode toggle with smooth theme transition
+60fps animations only — no janky scroll-jacking
+Loading skeleton states, not blank flashes
+
+Non-negotiables:
+
+No generic Bootstrap/template look
+No default browser focus rings — custom accessible focus states
+No stock photography — use abstract gradients, geometric shapes, or your actual project screenshots only
+Everything must feel intentional, not auto-generated
+
+Build this as a fully working, deployable Next.js app ready for Vercel

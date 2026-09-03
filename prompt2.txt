@@ -1,0 +1,52 @@
+Make every interactive element in the Meridian Web Co. portfolio site fully functional — no placeholder/dummy elements. Implement the following:
+
+1. Contact/Quote Form
+
+Fully functional form (name, email, project type dropdown, budget range dropdown, project details textarea)
+On submit: validate all fields (client-side + server-side), show inline error messages for invalid inputs
+Send form data via email using Resend or Nodemailer (SMTP) to the agency's email address
+Show a success toast/confirmation state after submission, disable button + show loading spinner during submit
+Store submissions in a database (MongoDB or PostgreSQL) as backup, with timestamp
+
+2. Newsletter/Lead Capture (if present)
+
+Functional email input that saves to database or connects to an email service (Mailchimp/ConvertKit API)
+Duplicate-email handling and success/error states
+
+3. Portfolio/Case Study Section
+
+Make project cards clickable — link to actual individual case study pages (dynamic routes using Next.js [slug] pages)
+Each case study page pulls real content (project name, description, tech stack, images, live link) from a CMS (Sanity/Contentful) or a local JSON/MongoDB data source — not hardcoded static cards
+
+4. Pricing Section (if present)
+
+'Get Started' / 'Book a Call' buttons should link to the contact form (auto-scroll + pre-fill the package name in the form) or open a Calendly embed for scheduling
+
+5. Navigation
+
+All nav links smooth-scroll to correct sections (or route correctly for multi-page setup)
+Mobile hamburger menu fully functional — opens/closes with animation, closes on link click or outside click
+
+6. Dark Mode Toggle
+
+Fully functional theme switch using next-themes, persists user preference in localStorage, no flash of wrong theme on load
+
+7. Testimonials Carousel
+
+Fully functional drag/swipe and arrow-button navigation, auto-play with pause-on-hover, correct pagination indicators
+
+8. Tech Stack Marquee
+
+Functional infinite scroll loop (CSS animation or Framer Motion), pauses on hover
+
+9. Social/Contact Links
+
+All footer/header social icons link to real URLs (LinkedIn, GitHub, Instagram, email mailto:, WhatsApp wa.me link if applicable)
+
+10. Backend/API Requirements
+
+Use Next.js API routes (or Route Handlers in App Router) for form submission and database writes
+Add environment variables for email service API key and database connection string (.env.local)
+Add basic rate-limiting or spam protection on the contact form (honeypot field or reCAPTCHA)
+
+Deliverable: A fully working, production-ready site where every button, form, link, and toggle performs its real intended action — nothing is a static/dead UI element. Include setup instructions for required API keys and environment variables.
